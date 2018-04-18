@@ -1,2 +1,2 @@
-/.idea/*.o
-/venv/*.o
+*.iml
+*.xml
