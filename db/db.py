@@ -6,11 +6,13 @@ def create_connection(db_file):
     """Create a database connection to a sqlite database"""
     try:
         conn = sqlite3.connect(db_file)
-        print(sqlite3.version)
+        print(sqlite3.version, "Yeah!")
     except Error as e:
         print(e)
-    finally:
-        conn.close()
+    # finally:
+    #     conn.close()
+
+    return conn
 
 
 if __name__ == '__main__':
